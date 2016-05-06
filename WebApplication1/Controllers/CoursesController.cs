@@ -27,7 +27,7 @@ namespace WebApplication1.Controllers
             {
                 Course newcourse = new Course();
                 newcourse.Name = model.Name;
-
+                
                 
                return RedirectToAction("AddCourse");
            }
