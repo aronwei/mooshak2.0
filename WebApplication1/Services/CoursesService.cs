@@ -18,6 +18,7 @@ namespace WebApplication1.Services
         public void AddCourseToDB(Course newCourse)
         {
             _db.Courses.Add(newCourse);
+            _db.SaveChanges();
         }
         public CourseViewModel GetCourseByID(int courseID)
         {
