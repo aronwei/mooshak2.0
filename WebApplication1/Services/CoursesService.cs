@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WebApplication1.Models;
-using WebApplication1.Models.Entities
+using WebApplication1.Models.Entities;
 
 namespace WebApplication1.Services
 {
@@ -18,6 +18,6 @@ namespace WebApplication1.Services
         {
             _db.Courses.Add(newCourse);
         }
-        public 
+        
     }
 }
