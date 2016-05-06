@@ -112,3 +112,4 @@ C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebAppli
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Courses.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Solutions.resources

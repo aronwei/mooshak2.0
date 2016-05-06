@@ -3,7 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using WebApplication1.Models.Enitities;
+using WebApplication1.Models.Entities;
 namespace WebApplication1.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
@@ -26,6 +26,8 @@ namespace WebApplication1.Models
         public DbSet<Assignment> Assignments { get; set; }
         public DbSet<AssignmentMilestone> Milestones { get; set; }
         public DbSet<Course> Courses { get; set; }
+
+        public DbSet<AssignmentSolution> Solutions { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection"/*, throwIfV1Schema: false*/)
         {

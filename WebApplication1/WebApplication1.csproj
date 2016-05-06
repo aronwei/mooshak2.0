@@ -177,11 +177,16 @@
     <Compile Include="Migrations\201605051554387_Courses.Designer.cs">
       <DependentUpon>201605051554387_Courses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605061045384_Solutions.cs" />
+    <Compile Include="Migrations\201605061045384_Solutions.Designer.cs">
+      <DependentUpon>201605061045384_Solutions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Enitities\Assignment.cs" />
-    <Compile Include="Models\Enitities\AssignmentMilestone.cs" />
-    <Compile Include="Models\Enitities\Course.cs" />
+    <Compile Include="Models\Entities\Assignment.cs" />
+    <Compile Include="Models\Entities\AssignmentMilestone.cs" />
+    <Compile Include="Models\Entities\AssignmentSolution.cs" />
+    <Compile Include="Models\Entities\Course.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ViewModels\AssignmentMilestoneViewModel.cs" />
     <Compile Include="Models\ViewModels\AssignmentViewModel.cs" />
@@ -257,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605051554387_Courses.resx">
       <DependentUpon>201605051554387_Courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605061045384_Solutions.resx">
+      <DependentUpon>201605061045384_Solutions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

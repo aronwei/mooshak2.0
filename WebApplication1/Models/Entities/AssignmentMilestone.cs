@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication1.Models.Enitities
+namespace WebApplication1.Models.Entities
 {
     /// <summary>
     /// An AssignmentMilestone represents a part of an assignment.
