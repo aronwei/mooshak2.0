@@ -182,15 +182,20 @@
     <Compile Include="Migrations\201605061045384_Solutions.Designer.cs">
       <DependentUpon>201605061045384_Solutions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605061518220_asdf.cs" />
+    <Compile Include="Migrations\201605061518220_asdf.Designer.cs">
+      <DependentUpon>201605061518220_asdf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
     <Compile Include="Models\Entities\AssignmentMilestone.cs" />
     <Compile Include="Models\Entities\AssignmentSolution.cs" />
     <Compile Include="Models\Entities\Course.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ViewModels\AccountViewModels.cs" />
     <Compile Include="Models\ViewModels\AssignmentMilestoneViewModel.cs" />
     <Compile Include="Models\ViewModels\AssignmentViewModel.cs" />
+    <Compile Include="Models\ViewModels\CourseViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AssignmentsService.cs" />
     <Compile Include="Services\CoursesService.cs" />
@@ -268,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605061045384_Solutions.resx">
       <DependentUpon>201605061045384_Solutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605061518220_asdf.resx">
+      <DependentUpon>201605061518220_asdf.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using WebApplication1.Models;
 using WebApplication1.Models.Entities;
+using WebApplication1.Models.ViewModels;
 
 namespace WebApplication1.Services
 {
@@ -18,6 +19,12 @@ namespace WebApplication1.Services
         {
             _db.Courses.Add(newCourse);
         }
-        
+        public CourseViewModel GetCourseByID(int courseID)
+        {
+            var courses = _db.Courses.SingleOrDefault(x => x.ID == courseID);
+            var ViewModel = new CourseViewModel();
+            return null;
+         
+        }
     }
 }
