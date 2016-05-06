@@ -26,6 +26,7 @@ namespace WebApplication1.Models
         public DbSet<Assignment> Assignments { get; set; }
         public DbSet<AssignmentMilestone> Milestones { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Submission> Submissions { get; set; }
 
         public DbSet<AssignmentSolution> Solutions { get; set; }
         public ApplicationDbContext()
