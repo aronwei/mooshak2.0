@@ -22,5 +22,6 @@ namespace WebApplication1.Models.Entities
         {
             Students.Add(student);
         }
+
     }
 }

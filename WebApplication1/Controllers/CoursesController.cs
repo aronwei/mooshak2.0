@@ -37,6 +37,14 @@ namespace WebApplication1.Controllers
            return View(model);
         }
 
+        public ActionResult ViewCourses()
+        {
+            CoursesService coursesservice = new CoursesService();
+            var model = coursesservice.GetAllCourses();
+            return View(model);
+
+        }
+
 
 	}
 }

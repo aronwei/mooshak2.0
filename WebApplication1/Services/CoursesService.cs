@@ -27,5 +27,23 @@ namespace WebApplication1.Services
             return null;
          
         }
+        public List<CourseViewModel> GetAllCourses()
+        {
+            List<CourseViewModel> skil = new List<CourseViewModel>();
+            var courses = _db.Courses.ToList();
+            foreach(Course  x in courses)
+            {
+                var temp = new CourseViewModel();
+                temp.Name = x.Name;
+                temp.ID = x.ID;
+                skil.Add(temp);
+            }
+            skil.Sort((x, y) => string.Compare(x.Name, y.Name));
+            return skil;
+            
+            
+        }
+
+
     }
 }
