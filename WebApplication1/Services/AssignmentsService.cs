@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WebApplication1.Models;
+using WebApplication1.Models.Entities;
 using WebApplication1.Models.ViewModels;
 
 
@@ -14,6 +15,11 @@ namespace WebApplication1.Services
         public AssignmentsService()
         {
             _db = new ApplicationDbContext();
+        }
+        public void AddAssignment(Assignment newAssignment)
+        {
+            _db.Assignments.Add(newAssignment);
+            _db.SaveChanges();
         }
         public List<AssignmentViewModel> GetAssignmentsInCourse(int courseID)
         {

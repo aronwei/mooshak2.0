@@ -120,3 +120,5 @@ C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplicat
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.pdb
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.SubmissionService.resources
+C:\Users\jonsi\Documents\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\jonsi\Documents\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.SubmissionService.resources
