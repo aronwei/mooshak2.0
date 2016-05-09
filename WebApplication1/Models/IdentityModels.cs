@@ -27,7 +27,8 @@ namespace WebApplication1.Models
         public DbSet<AssignmentMilestone> Milestones { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Submission> Submissions { get; set; }
-
+        public DbSet<User> Users { get; set; }
+        public DbSet<CourseAndUser> CourseAndUser { get; set; }
         public DbSet<AssignmentSolution> Solutions { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection"/*, throwIfV1Schema: false*/)

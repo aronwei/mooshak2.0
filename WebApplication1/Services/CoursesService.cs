@@ -40,10 +40,31 @@ namespace WebApplication1.Services
             }
             skil.Sort((x, y) => string.Compare(x.Name, y.Name));
             return skil;
-            
-            
         }
+        public List<UserViewModel> GetStudentsInCourse(int ThisCourseID)
+        {
+            List<UserViewModel> students = new List<UserViewModel>();
+            var b = (from a in _db.CourseAndUser
+                    where (a.CourseID == ThisCourseID)
+                    select a).ToList();
+            List<int> idlist = new List<int>();
+            foreach(var x in b)
+            {
+                idlist.Add(x.UserID);
+            }
+            foreach(var x in idlist)
+            {
+                var y = from a in _db.
+            }
 
+
+            students.Sort((x, y) => string.Compare(x.Name, y.Name));
+            return students;
+            
+                         
+            
+
+        } 
 
     }
 }
