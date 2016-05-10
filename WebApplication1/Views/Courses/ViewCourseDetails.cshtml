@@ -22,13 +22,18 @@ else
         <thead>
             <tr>
                 <td>Name</td>
+                <td>SSN</td>
+                <td>User Name</td>
             </tr>
         </thead>
         <tbody>
             @foreach (var student in Model.Students)
             {
                 <tr>
+                    <td>@student.Name</td>
+                    <td>@student.SSN</td>
                     <td>@student.UserName</td>
+                   <td> @Html.ActionLink("Remove from Course", "RemoveUserFromCourse", new { id = Model.ID })</td>
                 </tr>
             }
         </tbody>
