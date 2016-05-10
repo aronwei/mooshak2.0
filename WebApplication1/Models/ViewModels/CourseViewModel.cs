@@ -12,10 +12,6 @@ namespace WebApplication1.Models.ViewModels
         public int ID { get; set; }
         [Required(ErrorMessage = "Name is required!")]
         public string Name { get; set; }
-    }
-
-    public class ViewCorseViewModel
-    {
-        public string Name { get; set; }
+        public List<ApplicationUser> Students { get; set; }
     }
 }

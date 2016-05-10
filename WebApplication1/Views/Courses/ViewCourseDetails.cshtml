@@ -1,31 +1,41 @@
-﻿@model IEnumerable<WebApplication1.Models.ViewModels.UserViewModel>
+﻿@model WebApplication1.Models.ViewModels.CourseViewModel
 
 @{
     ViewBag.Title = "ViewCourseDetails";
 }
 
-<h2>ViewCourseDetails</h2>
+<h2>Course details - @Model.Name</h2>
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th></th>
-    </tr>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-        </tr>
-    }
-</table>
+@if (Model.Students.Count == 0)
+{
+    <div class="alert alert-info">
+        No students are currently enrolled in this course!
+    </div>
+}
+else
+{
+    <h3>Students in course</h3>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.Students)
+            {
+                <tr>
+                    <td>@student.UserName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
 
 <div>
-    @Html.ActionLink("Add Students to Course", "AddStudentsToCourse")
+    @Html.ActionLink("Add Students to Course", "AddStudentsToCourse", new { id = Model.ID })
 </div>
 
 

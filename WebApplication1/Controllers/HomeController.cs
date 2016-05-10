@@ -18,10 +18,10 @@ namespace WebApplication1.Controllers
             {
                 if (IdentityManager.UserIsInRole(User.Identity.GetUserId(), "Administrators"))
                 {
-                    //return RedirectToAction()
+                    //return RedirectToAction("Admin");
                 }
             }
-
+            
             return View();
         }
 

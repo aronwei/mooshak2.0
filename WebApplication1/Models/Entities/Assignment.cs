@@ -10,5 +10,9 @@ namespace WebApplication1.Models.Entities
         public int ID { get; set; }
         public int CourseID { get; set; }
         public string Title { get; set; }
+        public string Descriptin { get; set; }
+        public DateTime  Start { get; set; }
+        public DateTime End { get; set; }
+
     }
 }

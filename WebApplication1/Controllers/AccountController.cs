@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using WebApplication1.Models;
+using WebApplication1.Utils;
 
 namespace WebApplication1.Controllers
 {
@@ -79,9 +80,23 @@ namespace WebApplication1.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser() { UserName = model.UserName };
+
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    if (model.IsAdmin)
+                    {
+                        IdentityManager.AddUserToRole(user.Id, "Administrators");
+                    }
+                    if (model.IsTeacher)
+                    {
+                        IdentityManager.AddUserToRole(user.Id, "Teachers");
+                    }
+                    if (model.IsStudent)
+                    {
+                        IdentityManager.AddUserToRole(user.Id, "Students");
+                    }
+
                     await SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Index", "Home");
                 }

@@ -22,10 +22,10 @@ namespace WebApplication1.Services
         }
         public CourseViewModel GetCourseByID(int courseID)
         {
-            var courses = _db.Courses.SingleOrDefault(x => x.ID == courseID);
-            var ViewModel = new CourseViewModel();
-            return null;
+            var course = _db.Courses.SingleOrDefault(x => x.ID == courseID);
+            if (course == null) return null;
 
+            return new CourseViewModel() { ID = course.ID, Name = course.Name, Students = course.Students.ToList() };
         }
         public List<CourseViewModel> GetAllCourses()
         {
@@ -45,6 +45,7 @@ namespace WebApplication1.Services
 
         public List<UserViewModel> GetStudentsInCourse(int ThisCourseID)
         {
+            /*
             List<UserViewModel> students = new List<UserViewModel>();
             var b = (from a in _db.CourseAndUser
                      where (a.CourseID == ThisCourseID)
@@ -53,39 +54,27 @@ namespace WebApplication1.Services
             foreach (var x in b)
             {
                 idlist.Add(x.UserID);
-            }
+            }*/
             /*foreach(var x in idlist)
             {
                 var y = from a in _db.
             }*/
 
 
-            students.Sort((x, y) => string.Compare(x.Name, y.Name));
-            return students;
+            //students.Sort((x, y) => string.Compare(x.Name, y.Name));
+            return null;//students;
 
         }
 
-        public List<UserViewModel> GetStudentsByCourseID(int courseID)
+        public List<ApplicationUser> GetStudentsByCourseID(int courseID)
         {
-            List<UserViewModel> students = new List<UserViewModel>();
-             var studentsInCourse = (from student in _db.Students
-                           where student.Courses.Count(x => x.ID == courseID) > 0
-                           select student).ToList();
-            foreach(Student x in studentsInCourse)
-            {
-                var temp = new UserViewModel();
-                temp.ID = x.ID;
-                temp.Name = x.Name;
-                students.Add(temp);
-
-            }
-
-            return students;
+            var course = (from courses in _db.Courses where courses.ID == courseID select courses).SingleOrDefault();
+            return course.Students.ToList();
         }
 
-        public void AddStudentToCourse(int courseId, int studentId)
+        public void AddStudentToCourse(int courseId, string userId)
         {
-            Student studentToAdd = (from student in _db.Students where student.ID == studentId select student).SingleOrDefault();
+            ApplicationUser studentToAdd = (from student in _db.Users where student.Id == userId select student).SingleOrDefault();
             Course courseToAdd = (from course in _db.Courses where course.ID == courseId select course).SingleOrDefault();
             if (studentToAdd != null && courseToAdd != null)
             {

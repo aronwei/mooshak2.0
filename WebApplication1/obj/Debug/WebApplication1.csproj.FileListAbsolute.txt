@@ -111,15 +111,8 @@ C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin.Se
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Courses.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Solutions.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.asdf.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.SubmissionService.resources
 C:\Users\jonsi\Documents\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\jonsi\Documents\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.SubmissionService.resources
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\bin\WebApplication1.dll.config
@@ -253,11 +246,5 @@ C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebAppli
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test1.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test11.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test12.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.viewcourse.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.CourseDetailsVinna.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test1.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test11.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test12.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Test5.resources
-C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Test51.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache

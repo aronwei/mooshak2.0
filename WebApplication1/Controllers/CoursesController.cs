@@ -10,6 +10,7 @@ using WebApplication1.Services;
 
 namespace WebApplication1.Controllers
 {
+    [Authorize(Roles = "Administrators")]
     public class CoursesController : Controller
     {
         //
@@ -44,16 +45,41 @@ namespace WebApplication1.Controllers
             return View(model);
 
         }
-        [HttpGet]
-        public ActionResult ViewCourseDetails(int? n)
-        {
-            CoursesService cs = new CoursesService();
 
-            List<UserViewModel> model = cs.GetStudentsByCourseID(3);
+        [HttpGet]
+        [Route("Courses/ViewCourseDetails/{courseID}")]
+        public ActionResult ViewCourseDetails(int? courseID)
+        {
+            CoursesService cs =  new CoursesService();
+
+            CourseViewModel model = cs.GetCourseByID(courseID.Value);
+
+            //model.Students = cs.GetStudentsByCourseID(courseID);
 
             return View(model);
         }
 
+        [HttpGet]
+        [Route("Courses/AddStudentsToCourse/{courseID}")]
+        public ActionResult AddStudentsToCourse(int courseID)
+        {
+            AddStudentToCourseViewModel model = new AddStudentToCourseViewModel();
+            model.CourseID = courseID;
 
-	}
+            UserService userService = new UserService();
+            model.AvailableStudents = userService.GetAllUsers().Select(x=>new SelectListItem() { Value = x.Id, Text = x.UserName }).ToList();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult AddStudentsToCourse(AddStudentToCourseViewModel model)
+        {
+            CoursesService courseService = new CoursesService();
+
+            courseService.AddStudentToCourse(model.CourseID, model.UserID);
+
+            return RedirectToAction("ViewCourseDetails", new { courseID = model.CourseID });
+        }
+    }
 }

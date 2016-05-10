@@ -170,61 +170,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201605051339410_InitialCreate.cs" />
-    <Compile Include="Migrations\201605051339410_InitialCreate.Designer.cs">
-      <DependentUpon>201605051339410_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605051529142_initial.cs" />
-    <Compile Include="Migrations\201605051529142_initial.Designer.cs">
-      <DependentUpon>201605051529142_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605051554387_Courses.cs" />
-    <Compile Include="Migrations\201605051554387_Courses.Designer.cs">
-      <DependentUpon>201605051554387_Courses.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605061045384_Solutions.cs" />
-    <Compile Include="Migrations\201605061045384_Solutions.Designer.cs">
-      <DependentUpon>201605061045384_Solutions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605061518220_asdf.cs" />
-    <Compile Include="Migrations\201605061518220_asdf.Designer.cs">
-      <DependentUpon>201605061518220_asdf.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605061622117_SubmissionService.cs" />
-    <Compile Include="Migrations\201605061622117_SubmissionService.Designer.cs">
-      <DependentUpon>201605061622117_SubmissionService.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605071446409_viewcourse.cs" />
-    <Compile Include="Migrations\201605071446409_viewcourse.Designer.cs">
-      <DependentUpon>201605071446409_viewcourse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605091203017_CourseDetailsVinna.cs" />
-    <Compile Include="Migrations\201605091203017_CourseDetailsVinna.Designer.cs">
-      <DependentUpon>201605091203017_CourseDetailsVinna.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605091319465_test.cs" />
-    <Compile Include="Migrations\201605091319465_test.Designer.cs">
-      <DependentUpon>201605091319465_test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605091334286_test1.cs" />
-    <Compile Include="Migrations\201605091334286_test1.Designer.cs">
-      <DependentUpon>201605091334286_test1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605091339438_test11.cs" />
-    <Compile Include="Migrations\201605091339438_test11.Designer.cs">
-      <DependentUpon>201605091339438_test11.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605091358143_test12.cs" />
-    <Compile Include="Migrations\201605091358143_test12.Designer.cs">
-      <DependentUpon>201605091358143_test12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605101122528_Test5.cs" />
-    <Compile Include="Migrations\201605101122528_Test5.Designer.cs">
-      <DependentUpon>201605101122528_Test5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605101147127_Test51.cs" />
-    <Compile Include="Migrations\201605101147127_Test51.Designer.cs">
-      <DependentUpon>201605101147127_Test51.cs</DependentUpon>
+    <Compile Include="Migrations\201605101326523_initial.cs" />
+    <Compile Include="Migrations\201605101326523_initial.Designer.cs">
+      <DependentUpon>201605101326523_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
@@ -237,15 +185,18 @@
     <Compile Include="Models\Entities\User.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ViewModels\AccountViewModels.cs" />
+    <Compile Include="Models\ViewModels\AddStudentToCourseViewModel.cs" />
     <Compile Include="Models\ViewModels\AssignmentMilestoneViewModel.cs" />
     <Compile Include="Models\ViewModels\AssignmentViewModel.cs" />
     <Compile Include="Models\ViewModels\CourseViewModel.cs" />
+    <Compile Include="Models\ViewModels\StudentViewModel.cs" />
     <Compile Include="Models\ViewModels\SubmissionViewModel.cs" />
     <Compile Include="Models\ViewModels\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AssignmentsService.cs" />
     <Compile Include="Services\CoursesService.cs" />
     <Compile Include="Services\SubmissionService.cs" />
+    <Compile Include="Services\UserService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Utils\IdentityManager.cs" />
   </ItemGroup>
@@ -312,47 +263,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605051339410_InitialCreate.resx">
-      <DependentUpon>201605051339410_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605051529142_initial.resx">
-      <DependentUpon>201605051529142_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605051554387_Courses.resx">
-      <DependentUpon>201605051554387_Courses.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605061045384_Solutions.resx">
-      <DependentUpon>201605061045384_Solutions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605061518220_asdf.resx">
-      <DependentUpon>201605061518220_asdf.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605061622117_SubmissionService.resx">
-      <DependentUpon>201605061622117_SubmissionService.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605071446409_viewcourse.resx">
-      <DependentUpon>201605071446409_viewcourse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605091203017_CourseDetailsVinna.resx">
-      <DependentUpon>201605091203017_CourseDetailsVinna.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605091319465_test.resx">
-      <DependentUpon>201605091319465_test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605091334286_test1.resx">
-      <DependentUpon>201605091334286_test1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605091339438_test11.resx">
-      <DependentUpon>201605091339438_test11.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605091358143_test12.resx">
-      <DependentUpon>201605091358143_test12.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605101122528_Test5.resx">
-      <DependentUpon>201605101122528_Test5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605101147127_Test51.resx">
-      <DependentUpon>201605101147127_Test51.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201605101326523_initial.resx">
+      <DependentUpon>201605101326523_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
