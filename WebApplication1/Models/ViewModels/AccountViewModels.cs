@@ -50,6 +50,15 @@ namespace WebApplication1.Models
         public string UserName { get; set; }
 
         [Required]
+        [Display(Name = "Full Name")]
+        public string Name { get; set; }
+
+        [Required]
+        [StringLength(10, ErrorMessage = "The {0} must be at least {2} characters long.",  MinimumLength= 8)]
+        [Display(Name = "SSN")]
+        public string SSN { get; set; }
+
+        [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
