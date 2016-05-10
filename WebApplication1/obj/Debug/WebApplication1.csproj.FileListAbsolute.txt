@@ -259,3 +259,5 @@ C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplicat
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test1.resources
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test11.resources
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test12.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Test5.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Test51.resources

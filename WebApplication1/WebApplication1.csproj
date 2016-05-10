@@ -218,12 +218,21 @@
     <Compile Include="Migrations\201605091358143_test12.Designer.cs">
       <DependentUpon>201605091358143_test12.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605101122528_Test5.cs" />
+    <Compile Include="Migrations\201605101122528_Test5.Designer.cs">
+      <DependentUpon>201605101122528_Test5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605101147127_Test51.cs" />
+    <Compile Include="Migrations\201605101147127_Test51.Designer.cs">
+      <DependentUpon>201605101147127_Test51.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
     <Compile Include="Models\Entities\AssignmentMilestone.cs" />
     <Compile Include="Models\Entities\AssignmentSolution.cs" />
     <Compile Include="Models\Entities\Course.cs" />
     <Compile Include="Models\Entities\CourseAndUser.cs" />
+    <Compile Include="Models\Entities\Student.cs" />
     <Compile Include="Models\Entities\Submission.cs" />
     <Compile Include="Models\Entities\User.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -290,6 +299,7 @@
     <Content Include="Views\Courses\AddCourse.cshtml" />
     <Content Include="Views\Courses\ViewCourses.cshtml" />
     <Content Include="Views\Courses\ViewCourseDetails.cshtml" />
+    <Content Include="Views\Courses\AddStudentsToCourse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -337,6 +347,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605091358143_test12.resx">
       <DependentUpon>201605091358143_test12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605101122528_Test5.resx">
+      <DependentUpon>201605101122528_Test5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605101147127_Test51.resx">
+      <DependentUpon>201605101147127_Test51.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

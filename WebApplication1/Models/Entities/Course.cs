@@ -8,9 +8,12 @@ namespace WebApplication1.Models.Entities
 {
     public class Course
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public List<ApplicationUser> Teachers { get; set; }
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public virtual ICollection<Student> Students { get; set; }
+
+
+        /*public List<ApplicationUser> Teachers { get; set; }
         public List<ApplicationUser> Students { get; set; }
 
         [Authorize(Roles = "Admin")]
@@ -21,7 +24,7 @@ namespace WebApplication1.Models.Entities
         public  void AddStudent(ApplicationUser student)
         {
             Students.Add(student);
-        }
+        }*/
 
     }
 }

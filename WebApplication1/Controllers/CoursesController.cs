@@ -45,11 +45,12 @@ namespace WebApplication1.Controllers
 
         }
         [HttpGet]
-        public ActionResult ViewCourseDetails()
+        public ActionResult ViewCourseDetails(int? n)
         {
             CoursesService cs = new CoursesService();
 
-            List<UserViewModel> model = cs.GetStudentsInCourse(3);
+            List<UserViewModel> model = cs.GetStudentsByCourseID(3);
+
             return View(model);
         }
 
