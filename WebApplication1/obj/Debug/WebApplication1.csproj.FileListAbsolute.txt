@@ -168,16 +168,10 @@ C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
-C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate.resources
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
-C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Courses.resources
-C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Solutions.resources
-C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.asdf.resources
-C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.SubmissionService.resources
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.viewcourse.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\bin\WebApplication1.dll.config
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\bin\WebApplication1.dll
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\bin\WebApplication1.pdb
