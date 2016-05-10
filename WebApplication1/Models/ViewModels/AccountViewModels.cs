@@ -54,7 +54,7 @@ namespace WebApplication1.Models
         public string Name { get; set; }
 
         [Required]
-        [StringLength(10, ErrorMessage = "The {0} must be at least {2} characters long.",  MinimumLength= 8)]
+        [StringLength(10, ErrorMessage = "The {0} should only be {2} characters long.",  MinimumLength= 10)]
         [Display(Name = "SSN")]
         public string SSN { get; set; }
 
