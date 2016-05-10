@@ -190,6 +190,10 @@
     <Compile Include="Migrations\201605101749556_test3.Designer.cs">
       <DependentUpon>201605101749556_test3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605102305041_test10.cs" />
+    <Compile Include="Migrations\201605102305041_test10.Designer.cs">
+      <DependentUpon>201605102305041_test10.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
     <Compile Include="Models\Entities\AssignmentMilestone.cs" />
@@ -269,6 +273,7 @@
     <Content Include="Views\Courses\ViewCourseDetails.cshtml" />
     <Content Include="Views\Courses\AddStudentsToCourse.cshtml" />
     <Content Include="Views\Courses\AddAssignmentsToCourse.cshtml" />
+    <Content Include="Views\Account\ViewUsers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605101749556_test3.resx">
       <DependentUpon>201605101749556_test3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605102305041_test10.resx">
+      <DependentUpon>201605102305041_test10.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

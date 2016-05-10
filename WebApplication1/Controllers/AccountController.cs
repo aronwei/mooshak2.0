@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
 using WebApplication1.Models;
 using WebApplication1.Utils;
+using WebApplication1.Services;
 
 namespace WebApplication1.Controllers
 {
@@ -335,6 +336,15 @@ namespace WebApplication1.Controllers
             base.Dispose(disposing);
         }
 
+        public ActionResult ViewUsers()
+        {
+
+            UserService userservice = new UserService();
+            var model = userservice.GetAllUsers();
+
+            return View(model);
+
+        }
        
 
         #region Helpers

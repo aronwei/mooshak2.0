@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using WebApplication1.Models;
 using WebApplication1.Models.Entities;
 using WebApplication1.Models.ViewModels;
 using WebApplication1.Services;
+using WebApplication1.Utils;
 
 namespace WebApplication1.Controllers
 {
@@ -40,10 +42,11 @@ namespace WebApplication1.Controllers
 
         public ActionResult ViewCourses()
         {
+            
             CoursesService coursesservice = new CoursesService();
             var model = coursesservice.GetAllCourses();
             return View(model);
-
+         
         }
 
         [HttpGet]
@@ -104,5 +107,6 @@ namespace WebApplication1.Controllers
 
             return RedirectToAction("ViewCourseDetails", new { courseID = model.CourseID });
         }
+
     }
 }

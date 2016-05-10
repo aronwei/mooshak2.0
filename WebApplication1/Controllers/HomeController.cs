@@ -19,7 +19,9 @@ namespace WebApplication1.Controllers
                 if (IdentityManager.UserIsInRole(User.Identity.GetUserId(), "Administrators"))
                 {
                     //return RedirectToAction("Admin");
+                    
                 }
+
             }
             
             return View();
