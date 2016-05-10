@@ -253,3 +253,9 @@ C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebAppli
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test1.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test11.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test12.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.viewcourse.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.CourseDetailsVinna.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test1.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test11.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test12.resources

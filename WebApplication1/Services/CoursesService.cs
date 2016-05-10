@@ -52,10 +52,10 @@ namespace WebApplication1.Services
             {
                 idlist.Add(x.UserID);
             }
-            foreach(var x in idlist)
+            /*foreach(var x in idlist)
             {
                 var y = from a in _db.
-            }
+            }*/
 
 
             students.Sort((x, y) => string.Compare(x.Name, y.Name));
