@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
+using WebApplication1.Models.Entities;
 
 namespace WebApplication1.Models.ViewModels
 {
@@ -13,5 +14,6 @@ namespace WebApplication1.Models.ViewModels
         [Required(ErrorMessage = "Name is required!")]
         public string Name { get; set; }
         public List<ApplicationUser> Students { get; set; }
+        public List<Assignment> Assignments { get; set; }
     }
 }

@@ -51,10 +51,10 @@ namespace WebApplication1.Controllers
         public ActionResult ViewCourseDetails(int? courseID)
         {
             CoursesService cs =  new CoursesService();
+            AssignmentsService ass = new AssignmentsService();
 
             CourseViewModel model = cs.GetCourseByID(courseID.Value);
-
-            //model.Students = cs.GetStudentsByCourseID(courseID);
+            model.Assignments = ass.GetAssignmentsByCourseID(courseID.Value);
 
             return View(model);
         }
@@ -78,6 +78,29 @@ namespace WebApplication1.Controllers
             CoursesService courseService = new CoursesService();
 
             courseService.AddStudentToCourse(model.CourseID, model.UserID);
+
+            return RedirectToAction("ViewCourseDetails", new { courseID = model.CourseID });
+        }
+   
+        [HttpGet]
+        [Route("Courses/AddAssignmentToCourse/{courseID}")]
+        public ActionResult AddAssignmentsToCourse(int courseID)
+        {
+            AddAssignmentToCourseViewModel model = new AddAssignmentToCourseViewModel();
+            model.CourseID = courseID;
+
+            AssignmentsService assigmentService = new AssignmentsService();
+            model.AvailableAssignments = assigmentService.GetAllAssignments().Select(x => new SelectListItem() { Value = x.ID.ToString(), Text = x.Title }).ToList();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult AddAssignmentsToCourse(AddAssignmentToCourseViewModel model)
+        {
+            CoursesService assignmentService = new CoursesService();
+
+            assignmentService.AddAssignmentToCourse(model.CourseID, model.AssignmentID);
 
             return RedirectToAction("ViewCourseDetails", new { courseID = model.CourseID });
         }

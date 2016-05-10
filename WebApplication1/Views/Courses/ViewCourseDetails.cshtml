@@ -1,4 +1,5 @@
 ﻿@model WebApplication1.Models.ViewModels.CourseViewModel
+   
 
 @{
     ViewBag.Title = "ViewCourseDetails";
@@ -38,5 +39,38 @@ else
     @Html.ActionLink("Add Students to Course", "AddStudentsToCourse", new { id = Model.ID })
 </div>
 
+@if (Model.Assignments.Count == 0)
+{
+    <div class="alert alert-info">
+        No assignments are currently a part of this course!
+    </div>
+} 
+else
+{
+    <h3>Assignments in course</h3>
 
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Opening Date</td>
+                <td>Due Date</td>
+        </thead>
+        <tbody>
+            @foreach (var assignments in Model.Assignments)
+            {
+                <tr>
+                    <td>@assignments.Title</td>
+                    <td>@assignments.Descriptin</td>
+                    <td>@assignments.Start</td>
+                    <td>@assignments.End</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<div>
+    @Html.ActionLink("Add Assignment to Course", "AddAssignmentToCourse", new { id = Model.ID })
+</div>
 

@@ -16,15 +16,36 @@ namespace WebApplication1.Services
         {
             _db = new ApplicationDbContext();
         }
-        public void AddAssignment(Assignment newAssignment)
+        public void AddAssignmentToCourse(AssignmentViewModel model)
         {
+            Assignment newAssignment = new Assignment();
+            newAssignment.Title = model.Title;
+            newAssignment.Descriptin = model.Description;
+            newAssignment.Start = model.Start;
+            newAssignment.End = model.End;
             _db.Assignments.Add(newAssignment);
             _db.SaveChanges();
         }
-        public List<AssignmentViewModel> GetAssignmentsInCourse(int courseID)
+
+
+
+       /* public void AddStudentToCourse(int courseId, string userId)
         {
-            //TODO:
-            return null;
+            ApplicationUser studentToAdd = (from student in _db.Users where student.Id == userId select student).SingleOrDefault();
+            Course courseToAdd = (from course in _db.Courses where course.ID == courseId select course).SingleOrDefault();
+            if (studentToAdd != null && courseToAdd != null)
+            {
+                if (studentToAdd.Courses.Where(x => x.ID == courseId).Count() == 0)
+                {
+                    studentToAdd.Courses.Add(courseToAdd);
+                    _db.SaveChanges();
+                }
+            }
+        }*/
+        public List<Assignment> GetAssignmentsByCourseID(int courseID)
+        {
+            var course = (from courses in _db.Courses where courses.ID == courseID select courses).SingleOrDefault();
+            return course.Assignments.ToList();
         }
 
         public AssignmentViewModel GetAssignmentByID(int assignmentID)
@@ -50,6 +71,10 @@ namespace WebApplication1.Services
             };
 
             return null;
+        }
+        public List<Assignment> GetAllAssignments()
+        {
+            return _db.Assignments.ToList();
         }
     }
 }

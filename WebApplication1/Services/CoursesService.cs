@@ -85,7 +85,28 @@ namespace WebApplication1.Services
                 }
             }
         }
-    }
+
+        public List<Assignment> GetAssignmentByCourseID(int courseID)
+        {
+            var course = (from courses in _db.Courses where courses.ID == courseID select courses).SingleOrDefault();
+            return course.Assignments.ToList();
+        }
+
+        public void AddAssignmentToCourse(int courseID, int assignmentID)
+        {
+            Assignment assignmentToAdd = (from assignment in _db.Assignments where assignment.ID == assignmentID select assignment).SingleOrDefault();
+            Course courseToAdd = (from course in _db.Courses where course.ID == courseID select course).SingleOrDefault();         
+            if(assignmentToAdd != null && courseToAdd != null)
+            {
+                if (assignmentToAdd.Courses.Where(x => x.ID == courseID).Count() == 0)
+                {
+                    assignmentToAdd.Courses.Add(courseToAdd);
+                    _db.SaveChanges();
+                }
+            }
+            //throw new NotImplementedException();
+        }
+    } 
 }
 
     

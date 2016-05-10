@@ -8,10 +8,11 @@ namespace WebApplication1.Models.Entities
 {
     public class Course
     {
+
         public int ID { get; set; }
         public string Name { get; set; }
         public virtual ICollection<ApplicationUser> Students { get; set; }
-
+        public virtual ICollection<Assignment> Assignments { get; set; }
 
         /*public List<ApplicationUser> Teachers { get; set; }
         public List<ApplicationUser> Students { get; set; }

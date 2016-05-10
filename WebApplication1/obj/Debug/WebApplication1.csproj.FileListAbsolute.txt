@@ -242,3 +242,7 @@ C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebAppli
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test12.resources
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test1.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test2.resources
+C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test3.resources
