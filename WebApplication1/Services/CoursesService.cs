@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 using WebApplication1.Models;
 using WebApplication1.Models.Entities;
 using WebApplication1.Models.ViewModels;
@@ -20,12 +21,29 @@ namespace WebApplication1.Services
             _db.Courses.Add(newCourse);
             _db.SaveChanges();
         }
+
         public CourseViewModel GetCourseByID(int courseID)
         {
             var course = _db.Courses.SingleOrDefault(x => x.ID == courseID);
             if (course == null) return null;
 
             return new CourseViewModel() { ID = course.ID, Name = course.Name, Students = course.Students.ToList() };
+        }
+
+        public void EditCourseInDB(CourseViewModel model)
+        {
+            var course = _db.Courses.SingleOrDefault(x => x.ID == model.ID);
+            course.Name = model.Name;
+            _db.Entry(course).State = EntityState.Modified;
+            _db.SaveChanges();
+
+        }
+
+        public void DeleteCourse(CourseViewModel model)
+        {
+            var course = _db.Courses.SingleOrDefault(x => x.ID == model.ID);
+            _db.Courses.Remove(course);
+            _db.SaveChanges();
         }
         public List<CourseViewModel> GetAllCourses()
         {

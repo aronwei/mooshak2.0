@@ -50,5 +50,7 @@ namespace WebApplication1.Models
         }
 
         public System.Data.Entity.DbSet<WebApplication1.Models.ViewModels.AssignmentViewModel> AssignmentViewModels { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication1.Models.ViewModels.CourseViewModel> CourseViewModels { get; set; }
     }
 }
