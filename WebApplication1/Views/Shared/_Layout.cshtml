@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title Mooshak 2.0</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -18,8 +18,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Mooshak 2.0", "Login", "Account", null, new { @class = "navbar-brand" })
-            </div>
+
+                @if(User.IsInRole("Administrators") || User.IsInRole("Teachers") || User.IsInRole("Students"))
+                {
+                
+                    @Html.ActionLink("Mooshak 2.0", "ViewCourses", "Courses", null, new { @class = "navbar-brand" })
+                }
+                
+                else
+                {
+                    @Html.ActionLink("Mooshak 2.0", "Login", "Account", null, new { @class = "navbar-brand"})
+                }
+                
+             </div>
             
             @if(User.IsInRole("Administrators"))
             {
@@ -80,7 +91,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>The time is now: @DateTime.Now.ToString("HH:mm:ss")</p>
         </footer>
     </div>
 
