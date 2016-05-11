@@ -198,6 +198,46 @@
     <Compile Include="Migrations\201605111150356_blablablablablablabl.Designer.cs">
       <DependentUpon>201605111150356_blablablablablablabl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605111452373_test9375.cs" />
+    <Compile Include="Migrations\201605111452373_test9375.Designer.cs">
+      <DependentUpon>201605111452373_test9375.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111650407_test93751.cs" />
+    <Compile Include="Migrations\201605111650407_test93751.Designer.cs">
+      <DependentUpon>201605111650407_test93751.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111655437_test93752.cs" />
+    <Compile Include="Migrations\201605111655437_test93752.Designer.cs">
+      <DependentUpon>201605111655437_test93752.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111700186_text55.cs" />
+    <Compile Include="Migrations\201605111700186_text55.Designer.cs">
+      <DependentUpon>201605111700186_text55.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111705274_text551.cs" />
+    <Compile Include="Migrations\201605111705274_text551.Designer.cs">
+      <DependentUpon>201605111705274_text551.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111713224_text552.cs" />
+    <Compile Include="Migrations\201605111713224_text552.Designer.cs">
+      <DependentUpon>201605111713224_text552.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111725158_text553.cs" />
+    <Compile Include="Migrations\201605111725158_text553.Designer.cs">
+      <DependentUpon>201605111725158_text553.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111726253_text554.cs" />
+    <Compile Include="Migrations\201605111726253_text554.Designer.cs">
+      <DependentUpon>201605111726253_text554.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111734261_text555.cs" />
+    <Compile Include="Migrations\201605111734261_text555.Designer.cs">
+      <DependentUpon>201605111734261_text555.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605111747172_text556.cs" />
+    <Compile Include="Migrations\201605111747172_text556.Designer.cs">
+      <DependentUpon>201605111747172_text556.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
     <Compile Include="Models\Entities\AssignmentMilestone.cs" />
@@ -311,6 +351,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605111150356_blablablablablablabl.resx">
       <DependentUpon>201605111150356_blablablablablablabl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111452373_test9375.resx">
+      <DependentUpon>201605111452373_test9375.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111650407_test93751.resx">
+      <DependentUpon>201605111650407_test93751.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111655437_test93752.resx">
+      <DependentUpon>201605111655437_test93752.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111700186_text55.resx">
+      <DependentUpon>201605111700186_text55.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111705274_text551.resx">
+      <DependentUpon>201605111705274_text551.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111713224_text552.resx">
+      <DependentUpon>201605111713224_text552.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111725158_text553.resx">
+      <DependentUpon>201605111725158_text553.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111726253_text554.resx">
+      <DependentUpon>201605111726253_text554.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111734261_text555.resx">
+      <DependentUpon>201605111734261_text555.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605111747172_text556.resx">
+      <DependentUpon>201605111747172_text556.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

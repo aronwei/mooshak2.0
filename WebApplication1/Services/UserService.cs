@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using WebApplication1.Models;
 using WebApplication1.Models.Entities;
+using WebApplication1.Utils;
 
 namespace WebApplication1.Services
 {
@@ -21,12 +22,11 @@ namespace WebApplication1.Services
             return _db.Users.ToList();
         }*/
 
-        //Virkni ekki komið í lag
-        public List<Course> GetCoursesByUserID(string userID)
+
+        public string GetUserIDByName(string name)
         {
-            var user = (from users in _db.Users where users.Id == userID select users).SingleOrDefault();
-            return user.Courses.ToList();
-            
+            var x = (from a in _db.Users where (a.Name == name) select a.Id.ToString()).ToString();
+            return x;
         }
 
         public List<ApplicationUser> GetAllUsers()
@@ -40,7 +40,6 @@ namespace WebApplication1.Services
                 temp.SSN = x.SSN;
                 temp.UserName = x.UserName;
                 temp.Id = x.Id;
-                
                 skil.Add(temp);
             }
             skil.Sort((x, y) => string.Compare(x.Name, y.Name));

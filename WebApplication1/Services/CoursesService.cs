@@ -72,6 +72,26 @@ namespace WebApplication1.Services
             return course.Students.ToList();
         }
 
+        //Virkni ekki komið í lag
+        public List<CourseViewModel> GetCoursesByUserID(string userID)
+        {
+            List<CourseViewModel> skil = new List<CourseViewModel>();
+            var user = (from users in _db.Users where (users.Id == userID)select users ).SingleOrDefault();
+            var courses = user.Courses.ToList();
+            foreach (Course x in courses)
+            {
+                var temp = new CourseViewModel();
+                temp.Name = x.Name;
+                temp.ID = x.ID;
+                skil.Add(temp);
+            }
+            skil.Sort((x, y) => string.Compare(x.Name, y.Name));
+            return skil;
+            
+
+        }
+       
+
         public void AddStudentToCourse(int courseId, string userId)
         {
             ApplicationUser studentToAdd = (from student in _db.Users where student.Id == userId select student).SingleOrDefault();

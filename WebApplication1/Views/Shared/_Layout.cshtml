@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using WebApplication1.Utils
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -19,7 +20,11 @@
                 </button>
                 @Html.ActionLink("Mooshak 2.0", "Login", "Account", null, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            
+            @if(User.IsInRole("Administrators"))
+            {
+                
+                <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Course", "ViewCourses", "Courses")</li>
@@ -28,7 +33,48 @@
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
-        </div>
+                
+            
+            }
+            else if(User.IsInRole("Teachers"))
+            {
+
+                <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Course", "ViewCourses", "Courses")</li>
+                    <li>@Html.ActionLink("Users", "ViewUsers", "Account")</li>
+                    <li>@Html.ActionLink("Assignment", "AddAssignment", "Assignments")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+            }
+            
+            else if(User.IsInRole("Students"))
+            {
+                <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Course", "ViewCourses", "Courses")</li>
+                    <li>@Html.ActionLink("Users", "ViewUsers", "Account")</li>
+                    <li>@Html.ActionLink("Assignment", "AddAssignment", "Assignments")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+            
+            }
+                
+            else{
+              
+            <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+            </ul>
+            </div>
+            
+            }
+                
+</div>
     </div>
     <div class="container body-content">
         @RenderBody()

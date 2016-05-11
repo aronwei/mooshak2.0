@@ -12,7 +12,7 @@ using WebApplication1.Utils;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize(Roles = "Administrators")]
+    
     public class CoursesController : Controller
     {
         //
@@ -42,9 +42,21 @@ namespace WebApplication1.Controllers
 
         public ActionResult ViewCourses()
         {
-            
             CoursesService coursesservice = new CoursesService();
-            var model = coursesservice.GetAllCourses();
+            UserService userservice = new UserService();
+            List<CourseViewModel> model = new List<CourseViewModel>();
+            if (User.IsInRole("Administrators"))
+            {
+                model = coursesservice.GetAllCourses();
+            }
+           else if (User.IsInRole("Teachers") || User.IsInRole("Students"))
+            {
+                //var name = User.Identity.Name;
+                //var id = userservice.GetUserIDByName(name);
+
+                //model = coursesservice.GetCoursesByUserID(id);
+                model = coursesservice.GetAllCourses();
+            }
             return View(model);
          
         }
