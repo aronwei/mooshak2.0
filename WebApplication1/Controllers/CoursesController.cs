@@ -99,6 +99,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
+        [Route("Courses/AddAssignmentToCourse/{courseID}")]
         public ActionResult AddAssignmentsToCourse(AddAssignmentToCourseViewModel model)
         {
             CoursesService assignmentService = new CoursesService();

@@ -5,7 +5,7 @@
 }
 
 <h2>Add Assignment To Course</h2>
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("AddAssignmentsToCourse", "Courses", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
 
