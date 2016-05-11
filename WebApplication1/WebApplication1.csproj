@@ -238,6 +238,10 @@
     <Compile Include="Migrations\201605111747172_text556.Designer.cs">
       <DependentUpon>201605111747172_text556.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605112109232_test4.cs" />
+    <Compile Include="Migrations\201605112109232_test4.Designer.cs">
+      <DependentUpon>201605112109232_test4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
     <Compile Include="Models\Entities\AssignmentMilestone.cs" />
@@ -383,6 +387,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605111747172_text556.resx">
       <DependentUpon>201605111747172_text556.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605112109232_test4.resx">
+      <DependentUpon>201605112109232_test4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
