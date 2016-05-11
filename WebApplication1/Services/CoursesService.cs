@@ -36,7 +36,6 @@ namespace WebApplication1.Services
             course.Name = model.Name;
             _db.Entry(course).State = EntityState.Modified;
             _db.SaveChanges();
-
         }
 
         public void DeleteCourse(CourseViewModel model)

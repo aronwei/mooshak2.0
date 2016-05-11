@@ -29,11 +29,17 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @if(User.IsInRole("Administrators"))
-            { 
-            @Html.ActionLink("Edit", "EditCourse", new { id=item.ID }) 
-            @Html.ActionLink("Details", "ViewCourseDetails", new { id=item.ID }) 
-            @Html.ActionLink("Delete", "DeleteCourse", new { id=item.ID })
+            @if (User.IsInRole("Administrators"))
+            {
+                @Html.ActionLink("Edit", "EditCourse", new { id = item.ID }) 
+            }
+            @if (User.IsInRole("Administrators"))
+            {
+                @Html.ActionLink("Details", "ViewCourseDetails", new { id = item.ID })
+            }
+            @if (User.IsInRole("Administrators"))
+            {
+                @Html.ActionLink("Delete", "DeleteCourse", new { id=item.ID })
             }
             @if (User.IsInRole("Teachers"))
             {

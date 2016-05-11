@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 using WebApplication1.Models;
 using WebApplication1.Models.Entities;
 using WebApplication1.Models.ViewModels;
@@ -19,6 +20,14 @@ namespace WebApplication1.Services
         public void AddAssignmentToDB(Assignment newAssignment)
         {
             _db.Assignments.Add(newAssignment);
+            _db.SaveChanges();
+        }
+
+        public void EditAssignmentInDB(AssignmentViewModel model)
+        {
+            var assignment = _db.Assignments.SingleOrDefault(x => x.ID == model.ID);
+            assignment.Title = model.Title;
+            _db.Entry(assignment).State = EntityState.Modified;
             _db.SaveChanges();
         }
 
