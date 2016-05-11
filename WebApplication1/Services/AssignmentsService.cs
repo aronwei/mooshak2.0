@@ -16,32 +16,46 @@ namespace WebApplication1.Services
         {
             _db = new ApplicationDbContext();
         }
-        public void AddAssignmentToCourse(AssignmentViewModel model)
+        public void AddAssignmentToDB(Assignment newAssignment)
         {
-            Assignment newAssignment = new Assignment();
-            newAssignment.Title = model.Title;
-            newAssignment.Descriptin = model.Description;
-            newAssignment.Start = model.Start;
-            newAssignment.End = model.End;
             _db.Assignments.Add(newAssignment);
             _db.SaveChanges();
         }
 
-
-
-       /* public void AddStudentToCourse(int courseId, string userId)
+        public void AddAssignmentToCourse(AssignmentViewModel model)
         {
-            ApplicationUser studentToAdd = (from student in _db.Users where student.Id == userId select student).SingleOrDefault();
-            Course courseToAdd = (from course in _db.Courses where course.ID == courseId select course).SingleOrDefault();
-            if (studentToAdd != null && courseToAdd != null)
-            {
-                if (studentToAdd.Courses.Where(x => x.ID == courseId).Count() == 0)
-                {
-                    studentToAdd.Courses.Add(courseToAdd);
-                    _db.SaveChanges();
-                }
-            }
-        }*/
+            char delimiter = '-';
+            string[] StartDateSplit = model.StartDate.Split(delimiter);
+            string[] EndDateSplit = model.EndDate.Split(delimiter);
+
+            DateTime Start = Convert.ToDateTime(StartDateSplit[0] + "/" + StartDateSplit[1] + "/" + StartDateSplit[2] + " " + model.StartTime + ":00.00");
+            DateTime End = Convert.ToDateTime(EndDateSplit[0] + "/" + EndDateSplit[1] + "/" + EndDateSplit[2] + " " + model.EndTime + ":00.00");
+
+            Assignment newAssignment = new Assignment();
+            newAssignment.Title = model.Title;
+            newAssignment.Descriptin = model.Description;
+            newAssignment.Start = Start;
+            newAssignment.End = End;
+            _db.Assignments.Add(newAssignment);
+            _db.SaveChanges();
+
+        }
+
+
+
+        /* public void AddStudentToCourse(int courseId, string userId)
+         {
+             ApplicationUser studentToAdd = (from student in _db.Users where student.Id == userId select student).SingleOrDefault();
+             Course courseToAdd = (from course in _db.Courses where course.ID == courseId select course).SingleOrDefault();
+             if (studentToAdd != null && courseToAdd != null)
+             {
+                 if (studentToAdd.Courses.Where(x => x.ID == courseId).Count() == 0)
+                 {
+                     studentToAdd.Courses.Add(courseToAdd);
+                     _db.SaveChanges();
+                 }
+             }
+         }*/
         public List<Assignment> GetAssignmentsByCourseID(int courseID)
         {
             var course = (from courses in _db.Courses where courses.ID == courseID select courses).SingleOrDefault();

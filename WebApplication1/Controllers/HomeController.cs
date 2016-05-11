@@ -16,11 +16,11 @@ namespace WebApplication1.Controllers
 
             if (Request.IsAuthenticated)
             {
-                if (IdentityManager.UserIsInRole(User.Identity.GetUserId(), "Administrators"))
+               /* if (IdentityManager.UserIsInRole(User.Identity.GetUserId(), "Administrators"))
                 {
                     //return RedirectToAction("Admin");
                     
-                }
+                }*/
 
             }
             
