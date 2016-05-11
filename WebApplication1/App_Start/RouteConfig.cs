@@ -16,27 +16,11 @@ namespace WebApplication1
 
             routes.MapMvcAttributeRoutes();
 
-            bool UserLoggedIn = (System.Web.HttpContext.Current.User != null) && System.Web.HttpContext.Current.User.Identity.IsAuthenticated;
-
-            if(UserLoggedIn)
-            {
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Courses", action = "ViewCourses", id = UrlParameter.Optional}
-                );
-            }
-
-            else
-            {
-                routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional}
-                );
-            }
-                
-            
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional}
+                );  
         }
     }
 }
