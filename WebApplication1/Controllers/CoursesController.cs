@@ -34,7 +34,7 @@ namespace WebApplication1.Controllers
                 CoursesService coursedb = new CoursesService();
                 coursedb.AddCourseToDB(newcourse);
                 
-               return RedirectToAction("AddCourse");
+               return RedirectToAction("ViewCourses");
            }
                
            return View(model);
@@ -157,7 +157,7 @@ namespace WebApplication1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteCourse(CourseViewModel model)
         {
-            if (ModelState.IsValid)
+            if(model.ID != null)
             {
                 CoursesService coursedb = new CoursesService();
                 coursedb.DeleteCourse(model);
