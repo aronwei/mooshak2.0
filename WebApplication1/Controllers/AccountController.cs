@@ -336,12 +336,16 @@ namespace WebApplication1.Controllers
             base.Dispose(disposing);
         }
 
-        public ActionResult ViewUsers()
+        public ActionResult ViewUsers(string SearchString)
         {
 
             UserService userservice = new UserService();
             var model = userservice.GetAllUsers();
 
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                model = model.Where(x => x.Name.ToLower().Contains(SearchString)).ToList();
+            }
             return View(model);
 
         }
