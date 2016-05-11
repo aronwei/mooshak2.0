@@ -32,7 +32,6 @@ namespace WebApplication1.Models.Entities
         /// then this property contains the value 15.
         /// </summary>
         public int weight { get; set; }
-
         public string Input { get; set; }
         public string Output { get; set; }
     }
