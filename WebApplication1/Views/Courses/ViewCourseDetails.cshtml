@@ -70,12 +70,20 @@ else
                     <td>@assignments.Descriptin</td>
                     <td>@assignments.Start</td>
                     <td>@assignments.End</td>
+                    <td>
+                        @Html.ActionLink("Edit", "EditCourse", new { id = Model.ID }) |
+                        @Html.ActionLink("Details", "ViewCourseDetails", new { id = Model.ID }) |
+                        @Html.ActionLink("Delete", "DeleteCourse", new { id = Model.ID })
+                    </td>
                 </tr>
+
             }
+           
+
         </tbody>
     </table>
+
 }
 <div>
     @Html.ActionLink("Add Assignment to Course", "AddAssignmentToCourse", new { id = Model.ID })
 </div>
-

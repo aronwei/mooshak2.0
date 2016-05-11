@@ -121,5 +121,51 @@ namespace WebApplication1.Controllers
             return RedirectToAction("ViewCourseDetails", new { courseID = model.CourseID });
         }
 
+        [HttpGet]
+        [Route("Courses/EditCourse/{courseID}")]
+        public ActionResult EditCourse(int? courseID)
+        {
+            CoursesService b = new CoursesService();
+            CourseViewModel model = b.GetCourseByID(courseID.Value);
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditCourse(CourseViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                CoursesService coursedb = new CoursesService();
+                coursedb.EditCourseInDB(model);
+
+                return RedirectToAction("ViewCourses");
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        [Route("Courses/DeleteCourse/{courseID}")]
+        public ActionResult DeleteCourse(int? courseID)
+        {
+            CoursesService b = new CoursesService();
+            CourseViewModel model = b.GetCourseByID(courseID.Value);
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteCourse(CourseViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                CoursesService coursedb = new CoursesService();
+                coursedb.DeleteCourse(model);
+
+                return RedirectToAction("ViewCourses");
+            }
+            return View(model);
+        }
+
     }
 }
