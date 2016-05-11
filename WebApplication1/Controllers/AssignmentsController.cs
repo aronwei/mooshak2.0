@@ -14,6 +14,7 @@ namespace WebApplication1.Controllers
     {
         private AssignmentsService _service = new AssignmentsService();
         // GET: Assignments
+        [Authorize(Roles = "Administrator, Teachers")]
         public ActionResult AddAssignment()
         {
             AssignmentViewModel model = new AssignmentViewModel();
@@ -22,6 +23,7 @@ namespace WebApplication1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator, Teachers")]
         public ActionResult AddAssignment(AssignmentViewModel model)
         {
             if (ModelState.IsValid)
