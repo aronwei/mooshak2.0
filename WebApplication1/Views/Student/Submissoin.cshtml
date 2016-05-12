@@ -1,4 +1,8 @@
 ﻿
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
 @{
     ViewBag.Title = "Submissoin";
 }
@@ -8,16 +12,29 @@
 <div class="col-md-4">
     @using (Html.BeginForm())
     {
+<<<<<<< HEAD
+        <input type="submit" class="btn btn-primary" value="Compile Test Code" />
+    }
+
+    @if (ViewBag.Output != null)
+=======
         <input type="submit" class="btn btn-primary" value="Compile Test Code"/>
     }
 
     @if(ViewBag.Output != null)
+>>>>>>> origin/master
     {
         <ul>
             @foreach (var line in ViewBag.Output)
             {
                 <li>@line</li>
             }
+<<<<<<< HEAD
+        </ul>
+    }
+</div>
+=======
         </ul> 
     }
 </div>
+>>>>>>> origin/master
