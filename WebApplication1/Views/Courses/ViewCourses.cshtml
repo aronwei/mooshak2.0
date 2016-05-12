@@ -1,11 +1,13 @@
 ﻿@model IEnumerable<WebApplication1.Models.ViewModels.CourseViewModel>
+@using Microsoft.AspNet.Identity
 
 @{
     ViewBag.Title = "View Courses";
 }
 
-<h2>ViewCourses</h2>
+<h3>Hi  @User.Identity.GetUserName() looking sharp today</h3>
 
+<h4>Courses</h4>
 <p>
     @Html.ActionLink("Create New", "AddCourse")
 </p>

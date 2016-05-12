@@ -337,3 +337,6 @@ C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\
 C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test4.resources
+C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test77.resources
+C:\Users\Aron Wei Quan\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Test87.resources
