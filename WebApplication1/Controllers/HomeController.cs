@@ -41,7 +41,6 @@ namespace WebApplication1.Controllers
             {
                 IdentityManager.CreateRole("Teachers");
             }
-
             if (!IdentityManager.UserExists("admin"))
             {
                 ApplicationUser newAdmin = new ApplicationUser();

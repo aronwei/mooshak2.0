@@ -1,17 +1,17 @@
 ﻿@model WebApplication1.Models.ViewModels.CourseViewModel
 
 @{
-    ViewBag.Title = "EditCourse";
+    ViewBag.Title = "Edit Course";
 }
 
-<h2>EditCourse</h2>
+<h2>Edit your course</h2>
 
 @using (Html.BeginForm("EditCourse", "Courses", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>CourseViewModel</h4>
+        <h4>Here you can change the name of your course</h4>
         <hr />
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.ID)

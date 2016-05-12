@@ -36,9 +36,20 @@ else
                     <td>@assignments.Start</td>
                     <td>@assignments.End</td>
                     <td>
-                        @Html.ActionLink("Edit", "EditCourse", new { id = Model.ID }) |
-                        @Html.ActionLink("Details", "ViewCourseDetails", new { id = Model.ID }) |
-                        @Html.ActionLink("Delete", "DeleteCourse", new { id = Model.ID })
+
+                        @if (User.IsInRole("Administrators") || (User.IsInRole("Teachers")))
+                        {
+                            @Html.ActionLink("Edit", "EditCourse", new { id = Model.ID }) 
+                        }
+                        @if (User.IsInRole("Administrators") || (User.IsInRole("Teachers")))
+                        {
+                            @Html.ActionLink("Details", "ViewCourseDetails", new { id = Model.ID }) 
+                        }
+                        @if (User.IsInRole("Administrators") || (User.IsInRole("Teachers")))
+                        {
+                            @Html.ActionLink("Delete", "DeleteCourse", new { id = Model.ID })
+                        }
+
                     </td>
                 </tr>
 
@@ -50,42 +61,53 @@ else
 
 }
 <div>
+@if (User.IsInRole("Administrators") || (User.IsInRole("Teachers")))
+{
     @Html.ActionLink("Add Assignment to Course", "AddAssignmentToCourse", new { id = Model.ID })
+}
 </div>
 
-
-@if (Model.Students.Count == 0)
+@if (User.IsInRole("Administrators") || (User.IsInRole("Teachers")))
 {
-    <div class="alert alert-info">
-        No students are currently enrolled in this course!
+    if (Model.Students.Count == 0)
+    {
+        <div class="alert alert-info">
+            No students are currently enrolled in this course!
+        </div>
+    }
+    else
+    {
+        <h3>Students in course</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>SSN</td>
+                    <td>User Name</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model.Students)
+                {
+                    <tr>
+                        <td>@student.Name</td>
+                        <td>@student.SSN</td>
+                        <td>@student.UserName</td>
+                        @if (User.IsInRole("Administrators"))
+                        {
+                        <td> @Html.ActionLink("Remove from Course", "RemoveUserFromCourse", new { id = Model.ID })</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <div>
+@if (User.IsInRole("Administrators"))
+{
+        @Html.ActionLink("Add Students to Course", "AddStudentsToCourse", new { id = Model.ID })
+}
     </div>
 }
-else
-{
-    <h3>Students in course</h3>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <td>Name</td>
-                <td>SSN</td>
-                <td>User Name</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var student in Model.Students)
-            {
-                <tr>
-                    <td>@student.Name</td>
-                    <td>@student.SSN</td>
-                    <td>@student.UserName</td>
-                    <td> @Html.ActionLink("Remove from Course", "RemoveUserFromCourse", new { id = Model.ID })</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-
-<div>
-    @Html.ActionLink("Add Students to Course", "AddStudentsToCourse", new { id = Model.ID })
-</div>

@@ -54,5 +54,29 @@ namespace WebApplication1.Controllers
             var viewModel = _service.GetAssignmentByID(id);
             return View(viewModel);
         }
+
+        [HttpGet]
+        [Route("Courses/EditAssignment/{assignmentID}")]
+        public ActionResult EditAssignment(int? assignmentID)
+        {
+            AssignmentsService b = new AssignmentsService();
+            AssignmentViewModel model = b.GetAssignmentByID(assignmentID.Value);
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditAssignment(AssignmentViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                AssignmentsService assignmentdb = new AssignmentsService();
+                assignmentdb.EditAssignmentInDB(model);
+
+                return RedirectToAction("ViewCourses");
+            }
+            return View(model);
+        }
+
     }
 }
