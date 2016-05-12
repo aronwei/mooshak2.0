@@ -16,15 +16,15 @@ namespace WebApplication1.Controllers
 
             if (Request.IsAuthenticated)
             {
-               /* if (IdentityManager.UserIsInRole(User.Identity.GetUserId(), "Administrators"))
-                {
-                    //return RedirectToAction("Admin");
-                    
-                }*/
+                return RedirectToAction("ViewCourses", "Courses");
+            }
 
+            else
+            {
+                return RedirectToAction("Login", "Account");
             }
             
-            return View();
+            //return View();
         }
 
         private static void InitializeUsersAndRoles()
@@ -41,7 +41,6 @@ namespace WebApplication1.Controllers
             {
                 IdentityManager.CreateRole("Teachers");
             }
-
             if (!IdentityManager.UserExists("admin"))
             {
                 ApplicationUser newAdmin = new ApplicationUser();

@@ -239,6 +239,10 @@
     <Compile Include="Migrations\201605111747172_text556.Designer.cs">
       <DependentUpon>201605111747172_text556.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605112109232_test4.cs" />
+    <Compile Include="Migrations\201605112109232_test4.Designer.cs">
+      <DependentUpon>201605112109232_test4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
     <Compile Include="Models\Entities\AssignmentMilestone.cs" />
@@ -322,7 +326,11 @@
     <Content Include="Views\Assignments\AddAssignment.cshtml" />
     <Content Include="Views\Courses\EditCourse.cshtml" />
     <Content Include="Views\Courses\DeleteCourse.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Student\Submissoin.cshtml" />
+=======
+    <Content Include="Views\Assignments\EditAssignment.cshtml" />
+>>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -385,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605111747172_text556.resx">
       <DependentUpon>201605111747172_text556.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605112109232_test4.resx">
+      <DependentUpon>201605112109232_test4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
