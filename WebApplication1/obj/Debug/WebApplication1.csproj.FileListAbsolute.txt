@@ -225,21 +225,12 @@ C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreate.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Courses.resources
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.Solutions.resources
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.asdf.resources
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.SubmissionService.resources
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.viewcourse.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.CourseDetailsVinna.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test.resources
 C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test1.resources
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test11.resources
-C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test12.resources
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.initial.resources
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 C:\Users\daddi\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test.resources
@@ -337,3 +328,17 @@ C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\
 C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Axel Kristinsson\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test2.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test3.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test10.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.blablablablablablabl.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test9375.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test93751.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.test93752.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.text55.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.text551.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.text552.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.text553.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.text554.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.text555.resources
+C:\Users\Guðrún\Documents\GitHub\mooshak2.0\WebApplication1\obj\Debug\WebApplication1.Migrations.text556.resources
