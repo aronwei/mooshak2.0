@@ -33,11 +33,6 @@ namespace WebApplication1.Models
         public DbSet<AssignmentMilestone> Milestones { get; set; }
         public DbSet<Course>              Courses { get; set; }
         public DbSet<Submission>          Submissions { get; set; }
-        /*
-        public DbSet<User>                Users { get; set; }
-        public DbSet<Student>             Students { get; set; }
-        public DbSet<CourseAndUser>       CourseAndUser { get; set; }
-        */
         public DbSet<AssignmentSolution>  Solutions { get; set; }
 
         public ApplicationDbContext()
@@ -49,8 +44,11 @@ namespace WebApplication1.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<WebApplication1.Models.ViewModels.AssignmentViewModel> AssignmentViewModels { get; set; }
+        //public System.Data.Entity.DbSet<WebApplication1.Models.ViewModels.AssignmentViewModel> AssignmentViewModels { get; set; }
 
-        public System.Data.Entity.DbSet<WebApplication1.Models.ViewModels.CourseViewModel> CourseViewModels { get; set; }
+        //public System.Data.Entity.DbSet<WebApplication1.Models.ViewModels.CourseViewModel> CourseViewModels { get; set; }
+
+        //public System.Data.Entity.DbSet<WebApplication1.Models.ViewModels.AssignmentMilestoneViewModel> AssignmentMilestoneViewModels { get; set; }
+
     }
 }

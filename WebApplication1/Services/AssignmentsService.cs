@@ -99,5 +99,23 @@ namespace WebApplication1.Services
         {
             return _db.Assignments.ToList();
         }
+
+        public bool CreateAssignmentMilestone(AssignmentMilestoneViewModel model)
+        {
+            AssignmentMilestone newMilestone = new AssignmentMilestone()
+            {
+                AssignmentID = model.AssignmentID,
+                Title = model.Title,
+                Description = model.Description,
+                weight = model.weight,
+                Input = model.Input,
+                Output = model.Output
+            };
+
+            _db.Milestones.Add(newMilestone);
+            _db.SaveChanges();
+
+            return true;
+        }
     }
 }

@@ -78,5 +78,23 @@ namespace WebApplication1.Controllers
             return View(model);
         }
 
+        [HttpGet]
+        [Authorize(Roles = "Administrators, Teachers")]
+        public ActionResult CreateMilestone (int assignmentID)
+        {
+            AssignmentMilestoneViewModel newMilestone = new AssignmentMilestoneViewModel();
+            newMilestone.AssignmentID = assignmentID;
+
+            return View(newMilestone);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Administrators, Teachers")]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateMilestone(AssignmentMilestoneViewModel model)
+        {
+            _service.CreateAssignmentMilestone(model);
+            return RedirectToAction("CreateMilestone", "Assignments", new { assignmentID = model.AssignmentID });
+        }
     }
 }

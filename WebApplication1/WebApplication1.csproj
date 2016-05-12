@@ -170,77 +170,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201605101326523_initial.cs" />
-    <Compile Include="Migrations\201605101326523_initial.Designer.cs">
-      <DependentUpon>201605101326523_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605101631353_test.cs" />
-    <Compile Include="Migrations\201605101631353_test.Designer.cs">
-      <DependentUpon>201605101631353_test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605101705488_test1.cs" />
-    <Compile Include="Migrations\201605101705488_test1.Designer.cs">
-      <DependentUpon>201605101705488_test1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605101713460_test2.cs" />
-    <Compile Include="Migrations\201605101713460_test2.Designer.cs">
-      <DependentUpon>201605101713460_test2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605101749556_test3.cs" />
-    <Compile Include="Migrations\201605101749556_test3.Designer.cs">
-      <DependentUpon>201605101749556_test3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605102305041_test10.cs" />
-    <Compile Include="Migrations\201605102305041_test10.Designer.cs">
-      <DependentUpon>201605102305041_test10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111150356_blablablablablablabl.cs" />
-    <Compile Include="Migrations\201605111150356_blablablablablablabl.Designer.cs">
-      <DependentUpon>201605111150356_blablablablablablabl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111452373_test9375.cs" />
-    <Compile Include="Migrations\201605111452373_test9375.Designer.cs">
-      <DependentUpon>201605111452373_test9375.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111650407_test93751.cs" />
-    <Compile Include="Migrations\201605111650407_test93751.Designer.cs">
-      <DependentUpon>201605111650407_test93751.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111655437_test93752.cs" />
-    <Compile Include="Migrations\201605111655437_test93752.Designer.cs">
-      <DependentUpon>201605111655437_test93752.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111700186_text55.cs" />
-    <Compile Include="Migrations\201605111700186_text55.Designer.cs">
-      <DependentUpon>201605111700186_text55.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111705274_text551.cs" />
-    <Compile Include="Migrations\201605111705274_text551.Designer.cs">
-      <DependentUpon>201605111705274_text551.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111713224_text552.cs" />
-    <Compile Include="Migrations\201605111713224_text552.Designer.cs">
-      <DependentUpon>201605111713224_text552.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111725158_text553.cs" />
-    <Compile Include="Migrations\201605111725158_text553.Designer.cs">
-      <DependentUpon>201605111725158_text553.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111726253_text554.cs" />
-    <Compile Include="Migrations\201605111726253_text554.Designer.cs">
-      <DependentUpon>201605111726253_text554.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111734261_text555.cs" />
-    <Compile Include="Migrations\201605111734261_text555.Designer.cs">
-      <DependentUpon>201605111734261_text555.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605111747172_text556.cs" />
-    <Compile Include="Migrations\201605111747172_text556.Designer.cs">
-      <DependentUpon>201605111747172_text556.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605112109232_test4.cs" />
-    <Compile Include="Migrations\201605112109232_test4.Designer.cs">
-      <DependentUpon>201605112109232_test4.cs</DependentUpon>
+    <Compile Include="Migrations\201605121256394_test.cs" />
+    <Compile Include="Migrations\201605121256394_test.Designer.cs">
+      <DependentUpon>201605121256394_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\Assignment.cs" />
@@ -326,6 +258,7 @@
     <Content Include="Views\Courses\EditCourse.cshtml" />
     <Content Include="Views\Courses\DeleteCourse.cshtml" />
     <Content Include="Views\Assignments\EditAssignment.cshtml" />
+    <Content Include="Views\Assignments\CreateMilestone.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -338,59 +271,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605101326523_initial.resx">
-      <DependentUpon>201605101326523_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605101631353_test.resx">
-      <DependentUpon>201605101631353_test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605101705488_test1.resx">
-      <DependentUpon>201605101705488_test1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605101713460_test2.resx">
-      <DependentUpon>201605101713460_test2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605101749556_test3.resx">
-      <DependentUpon>201605101749556_test3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605102305041_test10.resx">
-      <DependentUpon>201605102305041_test10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111150356_blablablablablablabl.resx">
-      <DependentUpon>201605111150356_blablablablablablabl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111452373_test9375.resx">
-      <DependentUpon>201605111452373_test9375.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111650407_test93751.resx">
-      <DependentUpon>201605111650407_test93751.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111655437_test93752.resx">
-      <DependentUpon>201605111655437_test93752.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111700186_text55.resx">
-      <DependentUpon>201605111700186_text55.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111705274_text551.resx">
-      <DependentUpon>201605111705274_text551.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111713224_text552.resx">
-      <DependentUpon>201605111713224_text552.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111725158_text553.resx">
-      <DependentUpon>201605111725158_text553.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111726253_text554.resx">
-      <DependentUpon>201605111726253_text554.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111734261_text555.resx">
-      <DependentUpon>201605111734261_text555.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605111747172_text556.resx">
-      <DependentUpon>201605111747172_text556.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605112109232_test4.resx">
-      <DependentUpon>201605112109232_test4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201605121256394_test.resx">
+      <DependentUpon>201605121256394_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
