@@ -1,12 +1,17 @@
 ﻿@model IEnumerable<WebApplication1.Models.ViewModels.CourseViewModel>
+@using Microsoft.AspNet.Identity
 
 @{
     ViewBag.Title = "View Courses";
 }
 
-<h2>ViewCourses</h2>
+<h3>Hi  @User.Identity.GetUserName() looking sharp today</h3>
 
+<<<<<<< HEAD
 
+=======
+<h4>Courses</h4>
+>>>>>>> origin/master
 <p>
     @if (User.IsInRole("Administrators"))
     {
